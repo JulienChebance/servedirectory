@@ -1,10 +1,11 @@
 
 # servedirectory
-servedirectory is a one file command line app, with no prerequisite, that serve a directory using HTTP.
+_servedirectory_ is a one file command line app, with no prerequisite, that serve a directory using HTTP(S).
+
 ![screenshot](img/screenshot.png)
 
 ## Usage warning
-servedirectory is **not** intended to be used on a production server, nor over Internet, as it may lead to information disclosure if not used with care.
+_servedirectory_ is **not** intended to be used on a production server, nor over Internet, as it may lead to information disclosure if not used with care.
 
 ## Features
 - HTTP(S)
@@ -41,9 +42,9 @@ Usage:
 ```
 
 ## Secured server
-The certificate must be named `cert.pem`. If the certificate is signed by a certificate authority, the cert.pem file should be the concatenation of the server's certificate, any intermediates, and the CA's certificate.
+The certificate must be named `cert.pem`. If the certificate is signed by a certificate authority, the `cert.pem` file should be the concatenation of the server's certificate, any intermediates, and the CA's certificate.
 The private key must be named `key.pem`.
-Both files must be located in the same folder as servedirectory.
+Both files must be located in the same folder as _servedirectory_.
 
 ## License
 
