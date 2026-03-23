@@ -375,7 +375,6 @@
 			let headers = new Headers();
 			headers.append('Content-Type', 'application/json');
 			fetch(location.href, {method: 'POST', headers: headers, body: JSON.stringify(files)}).then((res) => {
-				console.log(res);
 				if (!res.ok) {
 					const alertElt = document.querySelector('.alert');
 					alertElt.innerText = res.status == 503?'Too many files selected':res.statusText;
